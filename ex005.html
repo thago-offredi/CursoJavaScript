@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Primeiros passos com o DOM</title>
+   <style>
+       body {
+           background-color: rgb(68, 125, 199);
+           color: white;
+           font: normal 18pt arial;
+       }
+   </style>
+</head>
+<body>
+   <h1>Iniciando os estudos com DOM</h1>
+   <p>Aqui vai o resultado</p>
+   <p>Aprendendo a usuar o <strong>DOM</strong> em JAavaScript</p>
+   <div>Clique em mim </div>
+   <div id="msg">Aqui esta a mensagem</div>
+   <script>
+      /* var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName("p")[0]; //selecionando o paragrafo o 0 é o primeiro parafrafo
+       corpo.style.background = "Black"
+       window.document.write("Esta escrito assim: " + p1.innerText) // innerText texto que esta dentro do paragrafo  
+       p1.style.color= "green"
+       var d = window.document.getElementById("msg")
+       d.style.background= "blue"
+       d.innerText=" Estou aguardando" */
+       var d = window.document.querySelector("div#msg")
+       d.style.color= "green"
+    </script>
+</body>
+</html>
